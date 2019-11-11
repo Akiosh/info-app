@@ -1,0 +1,26 @@
+{
+  "name": "info-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.12.x"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akiosh/info-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akiosh/info-app/issues"
+  },
+  "homepage": "https://github.com/Akiosh/info-app#readme"
+}
