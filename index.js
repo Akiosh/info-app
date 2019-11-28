@@ -2,17 +2,18 @@ const express = require('express');
 var cors = require('cors');
 
 const PORT = process.env.PORT || 5000;
-const toDos = ['asd', 'asd', 'asdasds'];
+let todos =[{"value":"aSDA","checked":false}];
 
 express()
   .use(express.json())
   .use(cors())
   .get('/', (req, res) => res.send('<h1> some info <h1/>'))
   .get('/todos', (req, res) => {
-    res.json(toDos);
+    res.json(todos);
   })
   .post('/todos', (req, res) => { 
-    toDos.push(req.body.todoElem);
-    res.json(toDos);
+    console.log(req.body);
+    todos = req.body;
+    res.json(todos);
   })
   .listen(PORT, () => console.log(`Listening on ${PORT}`))
