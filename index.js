@@ -14,6 +14,7 @@ express()
   .post('/todos', (req, res) => { 
     console.log(req.body);
     todos = req.body;
+    console.log('hi')
     res.json(todos);
   })
   .listen(PORT, () => console.log(`Listening on ${PORT}`))
